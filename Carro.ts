@@ -1,8 +1,9 @@
-export  class Carro{
-    private modelo: string
+import { Veiculo } from "./Veiculo";
+
+export  class Carro extends Veiculo{
     private numeroPortas: number
-    private velocidade: number = 0
     constructor(modelo: string, numeroPortas: number){
+        super()
         this.modelo= modelo
         this.numeroPortas= numeroPortas
     }

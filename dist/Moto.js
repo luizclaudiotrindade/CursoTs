@@ -14,23 +14,11 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var Veiculo_1 = require("./Veiculo");
-var Carro = /** @class */ (function (_super) {
-    __extends(Carro, _super);
-    function Carro(modelo, numeroPortas) {
-        var _this = _super.call(this) || this;
-        _this.modelo = modelo;
-        _this.numeroPortas = numeroPortas;
-        return _this;
+var Moto = /** @class */ (function (_super) {
+    __extends(Moto, _super);
+    function Moto() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-    Carro.prototype.acelerar = function () {
-        this.velocidade += 10;
-    };
-    Carro.prototype.parar = function () {
-        this.velocidade = 0;
-    };
-    Carro.prototype.velocidadeAtual = function () {
-        return this.velocidade;
-    };
-    return Carro;
+    return Moto;
 }(Veiculo_1.Veiculo));
-exports.Carro = Carro;
+exports.Moto = Moto;
