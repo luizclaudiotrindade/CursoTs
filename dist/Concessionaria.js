@@ -1,16 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Concenssionaria = /** @class */ (function () {
-    function Concenssionaria(endereco, listaDeCarros) {
+var Concessionaria = /** @class */ (function () {
+    function Concessionaria(endereco, listaDeCarros) {
         this.endereco = endereco;
         this.listaDeCarros = listaDeCarros;
     }
-    Concenssionaria.prototype.fornecerEndereco = function () {
+    Concessionaria.prototype.fornecerEndereco = function () {
         return this.endereco;
     };
-    Concenssionaria.prototype.mostrarListaDecarros = function () {
+    Concessionaria.prototype.mostrarListaDecarros = function () {
         return this.listaDeCarros;
     };
-    return Concenssionaria;
+    Concessionaria.prototype.fornecerHorarioFuncionamento = function () {
+        return 'Aberto seg a sext das 08:00 as 18h';
+    };
+    return Concessionaria;
 }());
-exports.Concenssionaria = Concenssionaria;
+exports.Concessionaria = Concessionaria;

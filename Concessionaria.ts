@@ -1,6 +1,7 @@
+import {ConcessionariaInterface} from './concessionariaInterface'
 import {Carro} from './Carro'
 
-export class Concenssionaria{
+export class Concessionaria implements ConcessionariaInterface{
     private endereco : string
     private listaDeCarros: Array<Carro>
 
@@ -13,5 +14,8 @@ export class Concenssionaria{
     }
     public mostrarListaDecarros(): Array<Carro>{
         return this.listaDeCarros
+    }
+    public fornecerHorarioFuncionamento(): string{
+        return 'Aberto seg a sext das 08:00 as 18h'
     }
 }
